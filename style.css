@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Myriad';
+    src: url('./assets/fonts/Myriad/Myriad%20Pro%20Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Caslon';
+    src: url('./assets/fonts/Caslon/F37Caslon-BoldDisplay.otf') format('opentype');
+}
+
+:root {
+    --bg: #e6e6e6;
+    --border: #4f4f4f;
+    --pink: #EF476F;
+    --font2: 'Myriad';
+    --font1: 'Caslon';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    background: var(--bg);
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pink);
+    font-family: var(--font1);
+    font-size: 50px;
+    height: 80px;
+}
+
+#todo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#todo-container {
+    border-radius: 50px;
+    border: 3px solid var(--border);
+    height: 500px;
+    width: 85%;
+}
+
