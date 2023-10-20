@@ -11,20 +11,23 @@
     <div id="header">Tasker</div>
     <section id="todo-wrapper">
         <div id="todo-container">
-            <div id="example-todo">
-                <textarea id="todo" rows="1">hello</textarea>
-                <!-- <input type="text" id="example-input" value="todo"> -->
-                <div id="buttons">
-                    <img src="./assets/imgs/edit.png" id="edit">
-                    <img src="./assets/imgs/trash.png" id="trash">
+            <!-- <div class="example-todo">
+                <textarea class="todo" oninput="autoResize(this)" rows="1">hello</textarea>
+                
+                <div class="buttons">
+                    <img src="./assets/imgs/edit.png"  onclick="editFocus()">
+                    <img src="./assets/imgs/trash.png"  onclick="deleteTodo()">
                 </div>
                 
-            </div>
+            </div> -->
+            <div id="empty">All tasks have been completed!</div>
+            
         </div>
     </section>
     <div id="input-wrapper">
-        <input type="text" id="todoInput" placeholder="Make tomorrow's lunch...">
-    </div>
-    
+        <div id="input-bar">
+            <textarea id="todoInput" oninput="autoResize(this)" rows="1" placeholder="Make tomorrow's lunch..."></textarea>
+        </div>
+    </div>    
 </body>
 </html>
