@@ -87,6 +87,8 @@ function addToDo(input) {
         test.disabled = true;
         if (test.value === '') {
             test.value = test.current;
+        } else {
+            test.current = test.value;
         }
     });
     test.autofocus = false;
