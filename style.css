@@ -105,6 +105,12 @@ img {
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
+    
+}
+
+.todo::placeholder {
+    color: white;
+    opacity: 1;
 }
 
 .todo:focus {
