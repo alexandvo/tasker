@@ -48,8 +48,12 @@ body {
     height: calc(100vh - 80px - 10vh);
     overflow: auto;
     min-height: 100px;
+
 }
 
+#todo-container::-webkit-scrollbar {
+    width: 0;
+}
 
 
 .example-todo {
