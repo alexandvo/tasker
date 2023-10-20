@@ -10,12 +10,18 @@ input.addEventListener('keydown', (event) => {
 
 function addToDo(input) {
     const todo = document.createElement('div');
-    todo.textContent = input.value;
+    
     const todoContainer = document.getElementById('todo-container');
     const deleteButton = document.createElement('button');
+    const editButton = document.createAttribute('button');
     deleteButton.textContent = 'delete';
     deleteButton.onclick = () => {
         todoContainer.removeChild(todo);
+    };
+    editButton.textContent = 'edit';
+    editButton.onclick = () => {
+        console.log('success');
+        todo.focus;
     };
     todo.appendChild(deleteButton);
     todoContainer.appendChild(todo);

@@ -45,7 +45,6 @@ body {
     border-radius: 50px;
     border: 3px solid var(--border);
     width: 85%;
-    max-height: 80vh;
     max-height: calc(100vh - 80px - 10vh);
     overflow: auto;
 }
@@ -72,3 +71,47 @@ body {
     outline: none;
 }
 
+#example-todo {
+    background: #073B4C;
+    border-radius: 100px;
+    min-height: 50px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#example-input {
+    outline: none;
+    background: none;
+    color: white;
+    font-family: 'Myriad';
+    font-size: 20px;
+    margin-left: 2%;
+    max-width: 100px;
+}
+
+#buttons {
+    right: 30px;
+    background: green;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img {
+    width: 40px;
+    margin-left: 10px;
+    height: auto;
+}
+
+#todo {
+    width: calc(100% - 130px);
+    resize: none;
+    outline: none; 
+    font-size: 20px;
+    font-family: var(--font2);
+}
