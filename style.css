@@ -107,6 +107,13 @@ img {
     margin-bottom: 20px;
 }
 
+.todo:focus {
+    opacity: 1;
+}
+.todo:not(:focus) {
+    opacity: 1;
+}
+
 #input-wrapper {
     position: absolute;
     z-index: 10;
