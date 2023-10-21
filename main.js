@@ -12,7 +12,7 @@ const input = document.getElementById('todoInput');
 
 input.addEventListener('keydown', (event) => {
     
-    if (event.key == 'Enter') {
+    if (event.key == 'Enter' || event.key == 'Done') {
         event.preventDefault();
             if (input.value != '' && /[a-zA-Z]/.test(input.value)) {
                 const todoContainer = document.getElementById('todo-container');
