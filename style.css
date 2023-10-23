@@ -60,7 +60,6 @@ body {
 .example-todo {
     background: #073B4C;
     border-radius: 50px;
-    min-height: 50px;
     padding-left: 20px;
     margin: 30px;
     position: relative;
@@ -183,3 +182,37 @@ body {
     margin-right: 5px;
 }
 
+@media (max-width: 500px) {
+    .buttons {
+        right: 4vw;
+    }
+    .btn {
+        width: 8vw;
+        margin: 0;
+    }
+    .todo {
+        width: calc(100% - 30vw);
+        font-size: 4vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .circle {
+       width: 5vw;
+    }
+    .example-todo {
+        padding-left: 4vw;
+        margin: 6vw;
+    }
+    #todoInput {
+        font-size: 4vw;
+        margin-left: 4vw;
+        width: calc(100% - 5vw);
+    }
+    #send {
+        width: 10vw;
+    }
+    #input-bar {
+        padding: 2vw;
+        min-height: 10vw;
+    }
+}

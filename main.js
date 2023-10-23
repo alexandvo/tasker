@@ -52,7 +52,13 @@ function autoResize(textarea) {
 }
 
 window.addEventListener("resize", () => {
-  autoResize(document.getElementById("todo"));
+  const todos = document.querySelectorAll('.todo');
+  if (todos) {
+    todos.forEach((element) => {
+    autoResize(element);
+    });
+  
+  }
   autoResize(document.getElementById("todoInput"));
 });
 
