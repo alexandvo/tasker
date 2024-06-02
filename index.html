@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
     <title>Tasker | ToDo Website Application</title>
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
@@ -13,6 +13,11 @@
         <div id="todo-container">
         </div>
     </section>
-    <input type="text" id="todoInput" placeholder="type something">
+    <div id="input-wrapper">
+        <div id="input-bar">
+            <textarea id="todoInput" oninput="autoResize(this)" rows="1" placeholder="Make lunch..."></textarea>
+            <img src="./assets/imgs/send.png" id="send">
+        </div>
+    </div>    
 </body>
 </html>
